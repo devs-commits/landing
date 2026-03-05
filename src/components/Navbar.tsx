@@ -12,7 +12,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsla(207,36%,95%,1)] backdrop-blur-md border-b border-border/50 shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <a href="https://wdc.ng/" target="_blank" rel="noopener noreferrer">
           <img src={wdcLogo} alt="Wild Fusion Digital Centre" className="h-8 md:h-10 object-contain" />
