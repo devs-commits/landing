@@ -4,6 +4,8 @@ import HeroSection from "./../components/HeroSection";
 import HardTruthSection from "../components/HardTruthSection";
 import DifferentiatorSection from "../components/DifferentiatorSection";
 import HowItWorksSection from "../components/HowItWorksSection";
+import ToluChat from "../components/ToluChat";
+import ObjectionsSection from "../components/ObjectionsSection";
 import Footer from "../components/Footer";
 const Index = () => {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
@@ -16,6 +18,8 @@ const Index = () => {
         <DifferentiatorSection />
     <HardTruthSection />
     <HowItWorksSection />
+    <ToluChat />
+    <ObjectionsSection />
     <Footer />
     </div>
   );
