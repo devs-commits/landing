@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
-// import HeroSection from "@/components/HeroSection";
+import HeroSection from "./../components/HeroSection";
 
 
 const Index = () => {
@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      {/* <HeroSection onCTAClick={() => setWaitlistOpen(true)} /> */}
+      <HeroSection onCTAClick={() => setWaitlistOpen(true)} />
     </div>
   );
 };
