@@ -11,6 +11,7 @@ import SponsorSection from "../components/SponsorSection";
 import Footer from "../components/Footer";
 import WaitlistModal from "../components/WaitlistModal";
 import SponsorModal from "../components/SponsorModal";
+import FinalCTASection from "../components/FinalCTASection";
 const Index = () => {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
   const [sponsorOpen, setSponsorOpen] = useState(false);
@@ -26,7 +27,7 @@ const Index = () => {
       <ObjectionsSection />
       <SponsorSection onSponsorClick={() => setSponsorOpen(true)} />
       <ScarcitySection />
-      {/* <FinalCTASection onCTAClick={() => setWaitlistOpen(true)} /> */}
+      <FinalCTASection onCTAClick={() => setWaitlistOpen(true)} />
       <Footer />
       <WaitlistModal open={waitlistOpen} onOpenChange={setWaitlistOpen} />
       <SponsorModal open={sponsorOpen} onOpenChange={setSponsorOpen} />
