@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import HeroSection from "./../components/HeroSection";
-
-
+import HardTruthSection from "../components/HardTruthSection";
 const Index = () => {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
   const [sponsorOpen, setSponsorOpen] = useState(false);
@@ -11,6 +10,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection onCTAClick={() => setWaitlistOpen(true)} />
+    <HardTruthSection />
     </div>
   );
 };
