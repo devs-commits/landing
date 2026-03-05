@@ -1,4 +1,4 @@
-import wdcLogo from "../assets/wdc-logo.jpg";
+import wdcLogo from "../assets/image.png";
 
 const Footer = () => (
   <footer className="hero-bg text-primary-foreground/50 py-10 px-4">
