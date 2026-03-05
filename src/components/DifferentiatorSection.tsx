@@ -3,7 +3,7 @@ import { User, Target, Code, Compass } from "lucide-react";
 
 const roles = [
   { name: "Tolu", title: "AI HR Manager", desc: "You report to Tolu", icon: User, color: "bg-accent/15 text-accent" },
-  { name: "Emem", title: "Project Manager", desc: "You get pushed by Emem", icon: Target, color: "bg-warning/15 text-warning" },
+  { name: "Emem", title: "Project Manager", desc: "You get pushed by Emem", icon: Target, color: "bg-destructive/15 text-destructive" },
   { name: "Sola", title: "Tech Lead", desc: "You get critiqued by Sola", icon: Code, color: "bg-ring/15 text-ring" },
   { name: "Kemi", title: "Career Coach", desc: "You get guided by Kemi", icon: Compass, color: "bg-destructive/15 text-destructive" },
 ];
