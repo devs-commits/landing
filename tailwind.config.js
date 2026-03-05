@@ -17,16 +17,9 @@ const config = {
       },
     },
     extend: {
-      backgroundImage: {
-        'four-corner': `
-          radial-gradient(circle at top left, hsla(0, 0%, 100%, 0.23), transparent 50%),
-          radial-gradient(circle at top right, hsla(145, 100%, 39%, 0.23), transparent 50%),
-          radial-gradient(circle at bottom right, hsla(258, 52%, 19%, 0.32), transparent 50%),
-          radial-gradient(circle at bottom left, hsla(191, 98%, 43%, 0.23), transparent 50%)
-        `,
-      },
       fontFamily: {
-        sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+        heading: ["Syne", "Space Grotesk", "sans-serif"],
+        body: ["Inter", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -53,6 +46,7 @@ const config = {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          glow: "hsl(var(--accent-glow))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -62,20 +56,13 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        coral: {
-          DEFAULT: "hsl(var(--coral))",
-          dark: "hsl(var(--coral-dark))",
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
         },
-        teal: {
-          DEFAULT: "hsl(var(--teal))",
-          dark: "hsl(var(--teal-dark))",
-        },
-        yellow: {
-          DEFAULT: "hsl(var(--yellow))",
-        },
-        navy: {
-          deep: "hsl(var(--navy-deep))",
-          light: "hsl(var(--navy-light))",
+        chat: {
+          DEFAULT: "hsl(var(--chat-bg))",
+          bubble: "hsl(var(--chat-bubble))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -95,46 +82,30 @@ const config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0", opacity: "0" },
-          to: { height: "var(--radix-accordion-content-height)", opacity: "1" },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)", opacity: "1" },
-          to: { height: "0", opacity: "0" },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
-        "fade-in": {
-          "0%": { opacity: "0", transform: "translateY(10px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
+        "pulse-glow": {
+          "0%, 100%": { boxShadow: "0 0 20px 0 hsl(152 76% 42% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px 8px hsl(152 76% 42% / 0.5)" },
         },
-        "fade-out": {
-          "0%": { opacity: "1", transform: "translateY(0)" },
-          "100%": { opacity: "0", transform: "translateY(10px)" },
-        },
-        "scale-in": {
-          "0%": { transform: "scale(0.95)", opacity: "0" },
-          "100%": { transform: "scale(1)", opacity: "1" },
-        },
-        "slide-in-right": {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0)" },
-        },
-        "slide-up": {
-          "0%": { transform: "translateY(20px)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out",
-        "fade-out": "fade-out 0.3s ease-out",
-        "scale-in": "scale-in 0.3s ease-out",
-        "slide-in-right": "slide-in-right 0.3s ease-out",
-        "slide-up": "slide-up 0.5s ease-out",
+        accordionDown: "accordion-down 0.2s ease-out",
+        accordionUp: "accordion-up 0.2s ease-out",
+        pulseGlow: "pulse-glow 3s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
 };
-
 module.exports = config;
