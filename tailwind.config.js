@@ -18,7 +18,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        heading: ["Syne", "Space Grotesk", "sans-serif"],
+        heading: ["Poppins", "sans-serif"],
         body: ["Inter", "sans-serif"],
       },
       colors: {
