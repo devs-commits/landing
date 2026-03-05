@@ -6,6 +6,8 @@ import DifferentiatorSection from "../components/DifferentiatorSection";
 import HowItWorksSection from "../components/HowItWorksSection";
 import ToluChat from "../components/ToluChat";
 import ObjectionsSection from "../components/ObjectionsSection";
+import ScarcitySection from "../components/ScarcitySection";
+import SponsorSection from "../components/SponsorSection";
 import Footer from "../components/Footer";
 const Index = () => {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
@@ -13,14 +15,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      <HeroSection onCTAClick={() => setWaitlistOpen(true)} />
+        <Navbar />
+        <HeroSection onCTAClick={() => setWaitlistOpen(true)} />
         <DifferentiatorSection />
-    <HardTruthSection />
-    <HowItWorksSection />
-    <ToluChat />
-    <ObjectionsSection />
-    <Footer />
+        <HardTruthSection />
+        <HowItWorksSection />
+        <ToluChat />
+        <ObjectionsSection />
+        <ScarcitySection />
+        <SponsorSection />
+        <Footer />
     </div>
   );
 };
