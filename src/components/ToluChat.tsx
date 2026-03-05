@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Send, MessageSquare } from "lucide-react";
 
 const toluResponses = [
-  "Interesting. But I've heard that before. Give me something specific — what's the one thing you can do better than 9,999 other applicants?",
-  "Hmm. You're getting warmer. Last chance — if I give you a desk, what will you ship in your first week?",
+  "Interesting. But I've heard that before. Give me something specific,what's the one thing you can do better than 9,999 other applicants?",
+  "Hmm. You're getting warmer. Last chance, if I give you a desk, what will you ship in your first week?",
   "Noted. I'll review your profile. If you're serious, secure your spot before the desks fill up.",
 ];
 
