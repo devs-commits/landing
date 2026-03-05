@@ -7,7 +7,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
-  <section className="min-h-screen flex items-center justify-center pt-20 pb-16 px-4 hero-bg text-primary-foreground relative overflow-hidden">
+  <section className="min-h-screen flex items-center justify-center pt-20 pb-5 px-4 hero-bg text-primary-foreground relative overflow-hidden">
     <div className="absolute inset-0">
       <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-accent/5 blur-[100px]" />
       <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/8 blur-[120px]" />
@@ -80,7 +80,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
-        className="mt-16"
+        className="mt-8"
       >
         <ChevronDown className="w-6 h-6 text-primary-foreground/30 mx-auto animate-bounce" />
       </motion.div>
