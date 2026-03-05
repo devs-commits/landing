@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSection from "./../components/HeroSection";
 import HardTruthSection from "../components/HardTruthSection";
 import DifferentiatorSection from "../components/DifferentiatorSection";
+import HowItWorksSection from "../components/HowItWorksSection";
 import Footer from "../components/Footer";
 const Index = () => {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
@@ -14,6 +15,7 @@ const Index = () => {
       <HeroSection onCTAClick={() => setWaitlistOpen(true)} />
         <DifferentiatorSection />
     <HardTruthSection />
+    <HowItWorksSection />
     <Footer />
     </div>
   );
