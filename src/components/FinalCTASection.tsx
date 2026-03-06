@@ -7,7 +7,7 @@ interface FinalCTASectionProps {
 }
 
 const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => (
-  <section className="py-24 md:py-32 px-4 relative overflow-hidden">
+  <section className="py-8 md:py-12 px-4 relative overflow-hidden">
     <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/5 to-background" />
     <div className="container mx-auto max-w-3xl text-center relative z-10">
       <motion.div
