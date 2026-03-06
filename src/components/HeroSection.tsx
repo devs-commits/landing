@@ -7,7 +7,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
-  <section className="min-h-screen flex items-center justify-center pt-20 pb-5 px-4 hero-bg text-primary-foreground relative overflow-hidden">
+  <section className="h-screen flex items-center justify-center pt-16 pb-0 hero-bg text-primary-foreground relative overflow-hidden">
     <div className="absolute inset-0">
       <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-accent/5 blur-[100px]" />
       <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/8 blur-[120px]" />
@@ -24,7 +24,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/20 bg-accent/10 text-accent text-sm font-medium mb-8"
+        className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/20 bg-accent/10 text-accent text-xs md:text-sm font-medium mb-4 md:mb-6"
       >
         <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
         Batch 1 — Limited to 1,000 Desks
@@ -34,7 +34,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-heading font-extrabold leading-[0.95] mb-8 tracking-tight"
+        className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-extrabold leading-[0.95] mb-4 md:mb-6 tracking-tight"
       >
         You Don't Need
         <br />
@@ -47,7 +47,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="text-base md:text-lg lg:text-xl text-primary-foreground/70 mb-10 max-w-2xl mx-auto leading-relaxed space-y-1"
+        className="text-sm md:text-base lg:text-lg text-primary-foreground/70 mb-5 md:mb-6 max-w-2xl mx-auto leading-relaxed space-y-0.5"
       >
         <p>By 2026, entry-level jobs will demand 2 years of experience.</p>
         <p className="font-semibold text-primary-foreground/90">WDC Labs gives you that experience in 90 days.</p>
@@ -58,9 +58,9 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
-        className="flex items-center justify-center gap-2 text-warning font-semibold mb-10"
+        className="flex items-center justify-center gap-2 text-warning font-semibold mb-5 md:mb-6 text-sm md:text-base"
       >
-        <AlertTriangle className="w-5 h-5" />
+        <AlertTriangle className="w-4 h-4 md:w-5 md:h-5" />
         <span>Only 1,000 Desks Per Batch.</span>
       </motion.div>
 
@@ -73,7 +73,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         <Button variant="cta" size="xl" onClick={onCTAClick} className="animate-pulse-glow">
           Secure My Spot
         </Button>
-        <p className="text-sm text-primary-foreground/40 mt-4">No credit card required.</p>
+        <p className="text-xs md:text-sm text-primary-foreground/40 mt-3">No credit card required.</p>
       </motion.div>
 
       <motion.div
@@ -82,7 +82,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         transition={{ delay: 1.2 }}
         className="mt-8"
       >
-        <ChevronDown className="w-6 h-6 text-primary-foreground/30 mx-auto animate-bounce" />
+        <ChevronDown className="w-5 h-5 text-primary-foreground/30 mx-auto animate-bounce" />
       </motion.div>
     </div>
   </section>
