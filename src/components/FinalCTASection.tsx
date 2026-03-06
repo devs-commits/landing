@@ -29,7 +29,7 @@ const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => (
           Join The Waitlist
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </Button>
-        <p className="text-sm text-muted-foreground mt-4">See your position instantly.</p>
+        <p className="text-sm text-muted-foreground mt-4">Secure your position instantly.</p>
       </motion.div>
     </div>
   </section>
