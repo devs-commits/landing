@@ -7,7 +7,7 @@ interface SponsorSectionProps {
 }
 
 const SponsorSection = ({ onSponsorClick }: SponsorSectionProps) => (
-  <section className="py-24 md:py-32 px-4 bg-secondary relative overflow-hidden">
+  <section className="py-8 md:py-12 px-4 bg-secondary relative overflow-hidden">
     <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
     <div className="container mx-auto max-w-2xl text-center relative z-10">
       <motion.div
