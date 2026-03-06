@@ -41,7 +41,7 @@ const ToluChat = () => {
   };
 
   return (
-    <section className="py-24 md:py-32 px-4 bg-secondary relative overflow-hidden">
+    <section className="py-8 md:py-12 px-4 bg-secondary relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.02]" style={{
         backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--foreground)) 1px, transparent 0)`,
         backgroundSize: '24px 24px'

@@ -9,7 +9,7 @@ const roles = [
 ];
 
 const DifferentiatorSection = () => (
-  <section className="py-24 md:py-32 px-4 hero-bg text-primary-foreground relative overflow-hidden">
+  <section className="py-8 md:py-12 px-4 hero-bg text-primary-foreground relative overflow-hidden">
     <div className="absolute inset-0 opacity-[0.02]" style={{
       backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary-foreground)) 1px, transparent 0)`,
       backgroundSize: '32px 32px'
@@ -26,7 +26,7 @@ const DifferentiatorSection = () => (
         </h2>
         <p className="text-lg text-primary-foreground/60 mb-12">Inside WDC Labs, you work with four AI supervisors:</p>
 
-        <div className="grid sm:grid-cols-2 gap-4 mb-12">
+        <div className="grid sm:grid-cols-2 gap-4 mb-8">
           {roles.map((role, i) => (
             <motion.div
               key={role.name}

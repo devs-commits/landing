@@ -23,13 +23,13 @@ const steps = [
 ];
 
 const HowItWorksSection = () => (
-  <section className="py-24 md:py-32 px-4 relative">
+  <section className="py-8 md:py-12 px-4 relative">
     <div className="container mx-auto max-w-5xl">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold text-center mb-20 tracking-tight"
+        className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold text-center mb-10 tracking-tight"
       >
         How It Works
       </motion.h2>

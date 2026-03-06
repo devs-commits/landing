@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const HardTruthSection = () => (
-  <section className="py-24 md:py-32 px-4 relative overflow-hidden">
+  <section className="py-8 md:py-12 px-4 relative overflow-hidden">
     <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
     <div className="container mx-auto max-w-2xl">
       <motion.div
@@ -10,7 +10,7 @@ const HardTruthSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold mb-10 tracking-tight">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold mb-8 tracking-tight">
           Let's Be Honest.
         </h2>
         <div className="text-lg md:text-xl leading-relaxed text-muted-foreground space-y-6">
