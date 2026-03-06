@@ -27,7 +27,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => (
         className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/20 bg-accent/10 text-accent text-xs md:text-sm font-medium mb-4 md:mb-6"
       >
         <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-        Batch 1 — Limited to 1,000 Desks
+        Batch 1- Limited to 1,000 Desks
       </motion.div>
 
       <motion.h1
